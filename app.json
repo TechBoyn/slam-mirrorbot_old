@@ -1,15 +1,15 @@
 {
-    "name": "slam-mirrorbot ",
-    "description": "Telegram mirror bot with python",
-    "logo": "https://telegra.ph/file/6507910fd06d18dfaba82.jpg",
+    "name": "anime-mirrorbot ",
+    "description": "Telegram bot with anime",
+    "logo": "https://www.pinclipart.com/picdir/big/10-107303_doraemon-clipart-psd-download-gambar-doraemon-hd-png.png",
     "keywords": [
       "bot",
       "telegram",
       "python"
     ],
-    "repository": "https://github.com/breakdowns/slam-mirrorbot",
-    "website": "https://t.me/SlamMirrorSupport",
-    "success_url": "https://github.com/breakdowns/slam-mirrorbot/blob/master/README.md",
+    "repository": "https://github.com/TechBoyn/slam-mirrorbot_old",
+    "website": "https://t.me/Prohor_Das",
+    "success_url": "https://github.com/TechBoyn/slam-mirrorbot_old/blob/master/README.md",
     "stack": "container",
     "env": {
       "ENV": {
@@ -19,10 +19,12 @@
       "BOT_TOKEN": {
         "description": "The telegram bot token that you get from @BotFather.",
         "required": true
+        "value": "5246835452:AAHDf91xqvr4RBUNq_3ki3iWXm6VxNbBvGs"
       },
       "GDRIVE_FOLDER_ID": {
         "description": "This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.",
         "required": true
+        "value": "0AGr93Qmg7gbOUk9PVA"
       },
       "DOWNLOAD_DIR": {
         "description": "The path to the local folder where the downloads should be downloaded to.",
@@ -31,20 +33,23 @@
       },
       "DOWNLOAD_STATUS_UPDATE_INTERVAL": {
         "description": "A short interval of time in seconds after which the Mirror progress message is updated. (I recommend to keep it 5 seconds at least).",
-        "value": "5",
+        "value": "1",
         "required":false
       },
       "OWNER_ID": {
         "description": "The Telegram User ID of the Owner of the Bot. Get it by using /info in @MissRose_bot.",
         "required": true
+        "value": "1613377247"
       },
       "AUTO_DELETE_MESSAGE_DURATION": {
         "description": "Interval of time (in seconds), after which the bot deletes it's message (and command message) which is expected to be viewed instantly. Note: Set to -1 to never automatically delete messages.",
         "required": true
+        "value": "-1"
       },
       "IS_TEAM_DRIVE": {
         "description": "Set to 'True' if GDRIVE_FOLDER_ID is from a Team Drive else False or Leave it empty.",
         "required": false
+        "value": "True"
       },
       "USE_SERVICE_ACCOUNTS": {
         "description": "Whether to use service accounts or not. For this to work see 'Using service accounts' in repo.",
@@ -53,18 +58,22 @@
       "AUTHORIZED_CHATS": {
         "description": "Fill User ID and Chat ID of you want to authorize.",
         "required": false
+        "value": "1850952663"
       },
       "INDEX_URL": {
         "description": "Refer to https://github.com/maple3142/GDIndex/ The URL should not have any trailing '/'.",
         "required": false
+        "value": "https://iptv.cosmosworld.techboyn.workers.dev/0:"
       },
       "TELEGRAM_API": {
         "description": "This is to authenticate to your telegram account for downloading Telegram files. You can get this from https://my.telegram.org.",
         "required": true
+        "value":"7978667"
       },
       "TELEGRAM_HASH": {
         "description": "This is to authenticate to your telegram account for downloading Telegram files. You can get this from https://my.telegram.org.",
         "required": true
+        "value":"e302546fb8a14810dca32c9266673e5a"
       },
       "UPTOBOX_TOKEN": {
         "description": "Uptobox token to mirror uptobox links. Get it from [Uptobox Premium Account](https://uptobox.com/my_account).",
@@ -85,10 +94,12 @@
       "BLOCK_MEGA_LINKS": {
         "description": "If you want to remove mega.nz mirror support, set it to True.",
         "required": false
+        "value":"True"
       },
       "STOP_DUPLICATE_MIRROR": {
         "description": "If this field is set to True, bot will check file in drive, if it is present in drive, downloading will be stopped.",
         "required": false
+        "value":"True"
       },
       "SHORTENER": {
         "description": "If you want to use shortener in Gdrive and index link.",
